@@ -1,5 +1,11 @@
 # 🐾 Pet Management System
 
+![Java](https://img.shields.io/badge/Java-24+-red?logo=java)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Made With Love](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
+![Last Commit](https://img.shields.io/badge/last%20commit-active-success)
+
 A simple Java console-based application for registering pets, storing them in a dynamic list, and generating formatted reports.
 This project demonstrates basic object-oriented programming, array manipulation, and controller-view structure in Java.
 
