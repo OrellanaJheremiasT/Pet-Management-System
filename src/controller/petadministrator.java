@@ -1,4 +1,5 @@
 package controller;
+
 import model.pets;
 
 public class petadministrator {
@@ -11,9 +12,14 @@ public class petadministrator {
     }
 
     public void addPet(pets pet) {
-        if (petCount>= petList.length){
+        if (petCount >= petList.length) {
             final int NEW_CAPACITY = 10;
             pets[] aux = new pets[petList.length + NEW_CAPACITY];
+
+            for (int i = 0; i < petList.length; i++) {
+                aux[i] = petList[i];
+            }
+
             petList = aux;
         }
 
