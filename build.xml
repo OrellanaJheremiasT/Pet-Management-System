@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project name="ProyectoMascotas" default="compile" basedir=".">
+
+    <!-- Carpeta donde están los .java -->
+    <property name="src.dir" value="src"/>
+    
+    <!-- Carpeta donde se guardarán los .class -->
+    <property name="build.dir" value="bin"/>
+
+    <!-- Eliminar y crear carpeta bin -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <!-- Compilar -->
+    <target name="compile" depends="clean">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false"/>
+    </target>
+
+    <!-- Ejecutar si tienes un main -->
+    <target name="run" depends="compile">
+        <java classname="Main" fork="true" classpath="${build.dir}"/>
+    </target>
+
+</project>
